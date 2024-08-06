@@ -7,7 +7,7 @@ export const ChatBoxButton = () => {
     const [chatBoxopen, setChatBoxOpen]= useState(false);
 
   return (
-    <div className="fixed bottom-5 right-6" >
+    <div className="fixed bottom-5 right-6">
     <Button className="rounded-full" >
        {chatBoxopen?<XCircle onClick={()=>setChatBoxOpen(false)}/>: <MessageCircleIcon onClick={()=> setChatBoxOpen(true)}/>  }
     </Button>
